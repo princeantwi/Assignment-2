@@ -56,6 +56,10 @@ function addHash(element){
   $('#mvar').val($('#mvar').val()+ "#");
 }
 
+function addDash(element){
+  $('#mvar').val($('#mvar').val()+ "-");
+}
+
 //Gestures
 var downX;
 var downY;
