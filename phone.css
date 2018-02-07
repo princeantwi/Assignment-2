@@ -1,0 +1,72 @@
+
+ h1 {
+  color:black;
+  text-align:left;
+  font-family:'Helvetica',sans-serif;
+}
+
+ div#keyboard {
+   width:400px;
+   height:150px;
+   margin:0 ;
+ }
+ ol.keys {
+   list-style-type:none;
+ }
+
+ ol.keys li {
+   width:25%;
+   display:block;
+   text-align:center;
+   height:2em;
+   float:left;
+   font-size:1.3em;
+   font-family:sans-serif;
+   padding-top:.7em;
+   border:1px solid rgb(100,100,100);
+  color:black;
+   background-color:rgba(197,195,195,.8);
+ }
+
+ ol.keys li:hover {
+   cursor:pointer;
+ }
+ ol.keys li:active {
+   background-color:rgb(200,200,200);
+   color:#000;
+ }
+
+ #display {
+   clear:both;
+   width:300px;
+   margin:0 auto;
+   display:block;
+   background-color:rgba(0,0,0,.9);
+   color:white;
+   font-family:'Helvetica';
+   font-size:2em;
+   margin-top:4em;
+   padding:.3em;
+   height:1.3em;
+ }
+
+ input {
+   margin-left: 95px;
+ }
+
+ #content h2 {
+   margin-left: 150px;
+ }
+
+ #gestures div{
+   width: 300px;
+   height: 300px;
+   background: silver;
+   margin-left: 50px;
+ }
+
+ #gestures input{
+   margin-left: 110px;
+   text-align: center;
+   font-family: sans-serif;
+ }

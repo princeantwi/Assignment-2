@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My First GUI</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+ <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+<!-- Tab links -->
+<div class="pure-button-group" role="group" aria-label="...">
+  <button class="pure-button pure-button-active" id="dialer">Dialer</button>
+  <button class="pure-button pure-button-active" id="contact_list">Contacts</button>
+  <button class="pure-button pure-button-active" id="add_contact">Add</button>
+  <button class="pure-button pure-button-active" id="gestures_add">Test Gestures</button>
+</div>
+
+<!-- Tab content -->
+<div id="content">
+  <div id="content_dialer" class="tab_content">
+    <h2>Dialer</h2>
+      <form action="" method="" name="keypad">
+     <input id=mvar type="text" value="" name="mvar"/><br />
+      <div id="keyboard">
+        <ol class="keys">
+         <li type="button" class="fbutton" name="1" value="1" id="1" onClick=addNumber(this);>1</li>
+         <li type="button" class="fbutton" name="2" value="2" id="2" onClick=addNumber(this);>2</li>
+         <li type="button" class="fbutton" name="3" value="3" id="3" onClick=addNumber(this);>3</li>
+         <li type="button" class="fbutton" name="4" value="4" id="4" onClick=addNumber(this);>4</li>
+         <li type="button" class="fbutton" name="5" value="5" id="5" onClick=addNumber(this);>5</li>
+         <li type="button" class="fbutton" name="6" value="6" id="6" onClick=addNumber(this);>6</li>
+         <li type="button" class="fbutton" name="7" value="7" id="7" onClick=addNumber(this);>7</li>
+         <li type="button" class="fbutton" name="8" value="8" id="8" onClick=addNumber(this);>8</li>
+         <li type="button" class="fbutton" name="9" value="9" id="9" onClick=addNumber(this);>9</li>
+         <li type="button" class="fbutton" name="*" value="*" id="*" onClick=addStar(this);>*</li>
+         <li type="button" class="fbutton" name="0" value="0" id="0" onClick=addNumber(this);>0</li>
+         <li type="button" class="fbutton" name="#" value="#" id="hash" onClick=addHash(this);>#</li>
+         <li type="button" class="fbutton" name="dial" id="dial" >Dial</li>
+         <li type="button" class="fbutton" name="-" value="-" id="-" onClick=addNumber(this);>-</li>
+         <li type="button" class="fbutton" name="clear" value=" " id="clear" onClick=clearNumber(this);>Clear</li>
+        </ol>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="content_list" class="tab_content">
+    <button class="pure-button">Ryan Mensah</button>
+    <button class="pure-button">Atta Mmorosa</button>
+    <button class="pure-button">Felix Antwi</button>
+    <button class="pure-button">Mavis Antwi</button>
+    <button class="pure-button">Mark Antwi</button>
+  </div>
+
+  <div id="content_add" class="tab_content">
+    <form class="pure-form pure-form-stacked" id="name">
+     <label for="name">Name</label>
+     <input id="name" placeholder="Jane Smith">
+    </form>
+
+    <form class="pure-form pure-form-stacked" id="number">
+     <label for="number">Phone Number</label>
+     <input id="number" placeholder="(000)-000-0000">
+    </form>
+
+    <form class="pure-form pure-form-stacked" id="email">
+     <label for="name">Email</label>
+     <input id="email" placeholder="Jane.Smith@colorado.edu">
+    </form>
+  </div>
+
+  <div id="gestures" class="tab_content">
+    <input type="text" id="gesture_output" placeholder="Ready">
+    <div id="gesture_area"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="phone.js"></script>
+</body>
+</html>
